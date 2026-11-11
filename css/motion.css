@@ -1,0 +1,14 @@
+﻿button{transition:translate .18s ease,filter .18s ease,box-shadow .18s ease;background-clip:padding-box}
+@media(hover:hover) and (pointer:fine){
+ button:not(:disabled):hover{translate:0 -3px;filter:brightness(1.13)}
+ .quantity button:hover{background:#ffcc0022}
+ .remove:hover{background:#d00012;color:#fff;border-color:#ff7676;rotate:8deg}
+}
+button:not(:disabled):active{translate:0 1px;filter:brightness(.96)}
+button:focus-visible{box-shadow:0 0 0 4px #ffcc0044}
+.flying-product{position:fixed;z-index:100;pointer-events:none;object-fit:contain;background:#17130e;border:2px solid #ffcc00;border-radius:18px;box-shadow:0 10px 28px #000a;will-change:transform,opacity}
+.cart-line{position:relative;padding-right:51px}
+.cart-line .remove{position:absolute;top:15px;right:0;display:grid;place-items:center;margin:0;padding:0;width:44px;height:44px;min-height:44px;min-width:44px;border:1px solid #ff7b7b65;border-radius:50%;background:#d000122b;color:#ffb2b2;font:400 30px/1 Arial;transition:translate .18s,rotate .18s,background .18s}
+.cart-line>div:last-child{min-width:54px}.cart-line strong{display:block;padding-top:5px}
+@media(max-width:360px){.cart-line{padding-right:45px;gap:6px}.cart-thumbnail{width:38px;height:46px}.cart-line h3{font-size:21px}.cart-line>div:last-child{min-width:45px}.cart-line strong{font-size:13px}.cart-line .remove{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){button{transition:none!important}button:hover,button:active{translate:none!important;rotate:none!important}.flying-product{display:none}}

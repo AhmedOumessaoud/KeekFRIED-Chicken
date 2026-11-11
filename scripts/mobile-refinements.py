@@ -1,0 +1,4 @@
+﻿from pathlib import Path
+p=Path('js/app.js');s=p.read_text(encoding='utf-8').replace('if(Number(button.dataset.change)>0){','if(Number(button.dataset.change)>0&&!$(\'#cart-dialog\').open){');s=s.replace("if(button.dataset.category){selected=", "if(button.dataset.category){$('#toast').classList.remove('show');selected=");p.write_text(s,encoding='utf-8')
+p=Path('css/mobile.css');s=p.read_text(encoding='utf-8-sig').replace('@media(max-width:760px){','@media(max-width:760px),(max-width:1024px) and (pointer:coarse){',1);p.write_text(s,encoding='utf-8')
+p=Path('scripts/check-mobile.mjs');s=p.read_text(encoding='utf-8-sig').replace("for(const e of await p.locator('.product .add').all())await e.tap();", "for(const id of await p.locator('.product .add').evaluateAll(a=>a.map(e=>e.dataset.id)))await p.locator(`.product .add[data-id=\"${id}\"]`).tap();");p.write_text(s,encoding='utf-8')

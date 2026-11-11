@@ -1,0 +1,13 @@
+﻿import {chromium} from '@playwright/test';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {pathToFileURL} from 'node:url';
+import {resolve} from 'node:path';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch();const page=await browser.newPage({viewport:{width:390,height:844}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+const url=pathToFileURL(resolve('index.html')).href;
+await page.goto(url);assert.equal(await page.locator('.product').count(),79);assert.equal(await page.locator('#categories button').count(),16);
+const menu=await page.locator('#products').innerHTML();const nav=await page.locator('#categories').innerHTML();
+let html=readFileSync('index.html','utf8');html=html.replace(/<div id="products">[\s\S]*?<\/div><p id="no-results"/,`<div id="products">${menu}</div><p id="no-results"`);html=html.replace(/<nav id="categories" aria-label="Catégories du menu">[\s\S]*?<\/nav>/,`<nav id="categories" aria-label="Catégories du menu">${nav}</nav>`);html=html.replace('<span id="result-count"></span>','<span id="result-count">79 délices à découvrir</span>');writeFileSync('index.html',html);
+await page.locator('.product .add').first().click();assert(await page.locator('#toast').textContent().then(t=>t.includes('Keek Burger')));await page.locator('#toast [data-open-cart]').click();assert.equal(await page.locator('.cart-line').count(),1);await page.locator('#close-cart').click();await page.locator('#search').fill('49');assert(await page.locator('#no-results').isVisible());await page.locator('#search').fill('');assert.equal(await page.locator('.product').count(),79);assert.deepEqual(errors,[]);
+const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const fallback=await context.newPage();await fallback.goto(url);assert.equal(await fallback.locator('.product').count(),79);assert.equal(await fallback.locator('#categories button').count(),16);await fallback.screenshot({path:'artifacts/direct-file-fallback.png'});
+await browser.close();console.log('Verified direct file opening, 79 products, cart interaction, search recovery, and visible menu even with JavaScript disabled.');

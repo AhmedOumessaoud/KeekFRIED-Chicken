@@ -1,0 +1,793 @@
+export const categories = [{"id":"cat-0","name":"Keek Burgers"},{"id":"cat-1","name":"Burgers"},{"id":"cat-2","name":"Steak Burgers"},{"id":"cat-3","name":"Stripes"},{"id":"cat-4","name":"Chicken Meal"},{"id":"cat-5","name":"Fish & Chips"},{"id":"cat-6","name":"Tacos"},{"id":"cat-7","name":"Pasticcios"},{"id":"cat-8","name":"Paninis"},{"id":"cat-9","name":"Salades & Desserts"},{"id":"cat-10","name":"Salades De Fruits"},{"id":"cat-11","name":"Nos Jus"},{"id":"cat-12","name":"Cocktails"},{"id":"cat-13","name":"Boissons"},{"id":"cat-14","name":"Suppléments"}];
+export const products = [
+  {
+    "id": "p1",
+    "category": "cat-0",
+    "name": "Keek Burger",
+    "description": "",
+    "price": 40,
+    "image": "assets/images/generated/p1.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p2",
+    "category": "cat-0",
+    "name": "Spicy Keek Burger",
+    "description": "",
+    "price": 45,
+    "image": "assets/images/generated/p2.webp",
+    "spicy": true,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p3",
+    "category": "cat-0",
+    "name": "Keek Double Chicken",
+    "description": "",
+    "price": 55,
+    "image": "assets/images/generated/p3.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p4",
+    "category": "cat-0",
+    "name": "Keek Double Chicken Spicy",
+    "description": "",
+    "price": 60,
+    "image": "assets/images/generated/p4.webp",
+    "spicy": true,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p5",
+    "category": "cat-1",
+    "name": "Classic Burger",
+    "description": "",
+    "price": 40,
+    "image": "assets/images/generated/p5.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p6",
+    "category": "cat-1",
+    "name": "Spicy Burger",
+    "description": "",
+    "price": 45,
+    "image": "assets/images/generated/p6.webp",
+    "spicy": true,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p7",
+    "category": "cat-1",
+    "name": "Double Chicken",
+    "description": "",
+    "price": 55,
+    "image": "assets/images/generated/p7.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p8",
+    "category": "cat-1",
+    "name": "Double Chicken Spicy",
+    "description": "",
+    "price": 60,
+    "image": "assets/images/generated/p8.webp",
+    "spicy": true,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p9",
+    "category": "cat-2",
+    "name": "Steak Burger",
+    "description": "",
+    "price": 45,
+    "image": "assets/images/generated/p9.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p10",
+    "category": "cat-2",
+    "name": "Double Steak",
+    "description": "",
+    "price": 50,
+    "image": "assets/images/generated/p10.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p11",
+    "category": "cat-2",
+    "name": "Triple Steak",
+    "description": "",
+    "price": 60,
+    "image": "assets/images/generated/p11.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p12",
+    "category": "cat-2",
+    "name": "Steak + Extra Chicken",
+    "description": "",
+    "price": 55,
+    "image": "assets/images/generated/p12.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p13",
+    "category": "cat-3",
+    "name": "6 Stripes",
+    "description": "Frites + pain",
+    "price": 40,
+    "image": "assets/images/generated/p13.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p14",
+    "category": "cat-3",
+    "name": "9 Stripes",
+    "description": "Frites + pain",
+    "price": 60,
+    "image": "assets/images/generated/p14.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p15",
+    "category": "cat-3",
+    "name": "12 Stripes",
+    "description": "2 frites + pain",
+    "price": 80,
+    "image": "assets/images/generated/p15.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p16",
+    "category": "cat-3",
+    "name": "24 Stripes",
+    "description": "4 frites + pain",
+    "price": 155,
+    "image": "assets/images/generated/p16.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p17",
+    "category": "cat-4",
+    "name": "7 Chicken Meal",
+    "description": "",
+    "price": 45,
+    "image": "assets/images/generated/p17.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p18",
+    "category": "cat-4",
+    "name": "10 Chicken Meal",
+    "description": "",
+    "price": 65,
+    "image": "assets/images/generated/p18.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p19",
+    "category": "cat-4",
+    "name": "15 Chicken Meal",
+    "description": "",
+    "price": 90,
+    "image": "assets/images/generated/p19.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p20",
+    "category": "cat-4",
+    "name": "20 Chicken Meal",
+    "description": "",
+    "price": 120,
+    "image": "assets/images/generated/p20.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p21",
+    "category": "cat-5",
+    "name": "6 Fish Chips",
+    "description": "",
+    "price": 40,
+    "image": "assets/images/generated/p21.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p22",
+    "category": "cat-5",
+    "name": "9 Fish Chips",
+    "description": "",
+    "price": 60,
+    "image": "assets/images/generated/p22.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p23",
+    "category": "cat-5",
+    "name": "12 Fish Chips",
+    "description": "",
+    "price": 80,
+    "image": "assets/images/generated/p23.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p24",
+    "category": "cat-5",
+    "name": "24 Fish Chips",
+    "description": "",
+    "price": 160,
+    "image": "assets/images/generated/p24.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p25",
+    "category": "cat-6",
+    "name": "Tacos Chicken",
+    "description": "",
+    "price": 40,
+    "image": "assets/images/generated/p25.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p26",
+    "category": "cat-6",
+    "name": "T.Smoken Chicken",
+    "description": "",
+    "price": 45,
+    "image": "assets/images/generated/p26.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p27",
+    "category": "cat-6",
+    "name": "Tacos Nuggets",
+    "description": "",
+    "price": 42,
+    "image": "assets/images/generated/p27.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p28",
+    "category": "cat-6",
+    "name": "Tacos Cordon Bleu",
+    "description": "",
+    "price": 42,
+    "image": "assets/images/generated/p28.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p29",
+    "category": "cat-6",
+    "name": "Tacos Mix",
+    "description": "",
+    "price": 50,
+    "image": "assets/images/generated/p29.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p30",
+    "category": "cat-6",
+    "name": "Tacos Steak Hachée",
+    "description": "",
+    "price": 50,
+    "image": "assets/images/generated/p30.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p31",
+    "category": "cat-7",
+    "name": "Pasticcio Chicken",
+    "description": "",
+    "price": 40,
+    "image": "assets/images/generated/p31.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p32",
+    "category": "cat-7",
+    "name": "Pasticcio Mix",
+    "description": "",
+    "price": 45,
+    "image": "assets/images/generated/p32.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p33",
+    "category": "cat-7",
+    "name": "Pasticcio Charcuterie",
+    "description": "",
+    "price": 42,
+    "image": "assets/images/generated/p33.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p34",
+    "category": "cat-7",
+    "name": "Pasticcio Nugget",
+    "description": "",
+    "price": 42,
+    "image": "assets/images/generated/p34.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p35",
+    "category": "cat-7",
+    "name": "Pasticcio Cordon Bleu",
+    "description": "",
+    "price": 42,
+    "image": "assets/images/generated/p35.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p36",
+    "category": "cat-8",
+    "name": "Panini Chicken",
+    "description": "",
+    "price": 35,
+    "image": "assets/images/generated/p36.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p37",
+    "category": "cat-8",
+    "name": "Panini Nugget",
+    "description": "",
+    "price": 35,
+    "image": "assets/images/generated/p37.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p38",
+    "category": "cat-8",
+    "name": "Panini Charcuterie",
+    "description": "",
+    "price": 35,
+    "image": "assets/images/generated/p38.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p39",
+    "category": "cat-8",
+    "name": "Panini Steak Haché",
+    "description": "",
+    "price": 35,
+    "image": "assets/images/generated/p39.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p40",
+    "category": "cat-8",
+    "name": "Panini Mix",
+    "description": "",
+    "price": 40,
+    "image": "assets/images/generated/p40.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p41",
+    "category": "cat-9",
+    "name": "Salade Chicken",
+    "description": "Tomates + laitue + crispy",
+    "price": 35,
+    "image": "assets/images/generated/p41.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p42",
+    "category": "cat-9",
+    "name": "Salade de Fruit",
+    "description": "Fruits de saison + jus d’avocat / orange",
+    "price": 19,
+    "image": "assets/images/generated/p42.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p43",
+    "category": "cat-9",
+    "name": "Tiramisu",
+    "description": "",
+    "price": 15,
+    "image": "assets/images/generated/p43.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p44",
+    "category": "cat-10",
+    "name": "Salade Fruits",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p44.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p45",
+    "category": "cat-10",
+    "name": "Salade Royale",
+    "description": "",
+    "price": 35,
+    "image": "assets/images/generated/p45.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p46",
+    "category": "cat-10",
+    "name": "Salade Fruits Emporter",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p46.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p47",
+    "category": "cat-10",
+    "name": "Za3za3",
+    "description": "",
+    "price": 35,
+    "image": "assets/images/generated/p47.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p48",
+    "category": "cat-11",
+    "name": "Jus d'orange",
+    "description": "",
+    "price": 20,
+    "image": "assets/images/generated/p48.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p49",
+    "category": "cat-11",
+    "name": "Jus de banane",
+    "description": "",
+    "price": 20,
+    "image": "assets/images/generated/p49.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p50",
+    "category": "cat-11",
+    "name": "Jus de pomme",
+    "description": "",
+    "price": 20,
+    "image": "assets/images/generated/p50.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p51",
+    "category": "cat-11",
+    "name": "Jus d'ananas",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p51.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p52",
+    "category": "cat-11",
+    "name": "Jus de mangue",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p52.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p53",
+    "category": "cat-11",
+    "name": "Papaye",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p53.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p54",
+    "category": "cat-11",
+    "name": "Jus d'avocat",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p54.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p55",
+    "category": "cat-11",
+    "name": "Jus d'amande",
+    "description": "",
+    "price": 20,
+    "image": "assets/images/generated/p55.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p56",
+    "category": "cat-12",
+    "name": "Jus banane pomme",
+    "description": "",
+    "price": 20,
+    "image": "assets/images/generated/p56.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p57",
+    "category": "cat-12",
+    "name": "Jus panaché",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p57.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p58",
+    "category": "cat-12",
+    "name": "Exotique",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p58.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p59",
+    "category": "cat-12",
+    "name": "Énergétique",
+    "description": "",
+    "price": 30,
+    "image": "assets/images/generated/p59.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p60",
+    "category": "cat-12",
+    "name": "Jus de fraise",
+    "description": "",
+    "price": 25,
+    "image": "assets/images/generated/p60.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p61",
+    "category": "cat-12",
+    "name": "Jus de kiwi",
+    "description": "",
+    "price": 30,
+    "image": "assets/images/generated/p61.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p62",
+    "category": "cat-13",
+    "name": "Jus Cocktail",
+    "description": "",
+    "price": 20,
+    "image": "assets/images/generated/p62.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p63",
+    "category": "cat-13",
+    "name": "Mini Jus d'orange",
+    "description": "",
+    "price": 8,
+    "image": "assets/images/generated/p63.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p64",
+    "category": "cat-13",
+    "name": "Mini Jus d'avocat",
+    "description": "",
+    "price": 11,
+    "image": "assets/images/generated/p64.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p65",
+    "category": "cat-13",
+    "name": "Mini Jus Cocktail",
+    "description": "",
+    "price": 11,
+    "image": "assets/images/generated/p65.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p66",
+    "category": "cat-13",
+    "name": "Pepsi",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p66.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p67",
+    "category": "cat-13",
+    "name": "7 Up",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p67.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p68",
+    "category": "cat-13",
+    "name": "Mirinda",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p68.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p69",
+    "category": "cat-13",
+    "name": "Plus",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p69.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p70",
+    "category": "cat-13",
+    "name": "Boisson gazeuse 24 CL",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p70.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p71",
+    "category": "cat-13",
+    "name": "Boisson gazeuse 33 CL",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p71.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p72",
+    "category": "cat-13",
+    "name": "Boisson gazeuse 60 CL",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p72.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p73",
+    "category": "cat-13",
+    "name": "Eau Minérale G",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p73.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p74",
+    "category": "cat-13",
+    "name": "Eau Minérale P",
+    "description": "",
+    "price": 5,
+    "image": "assets/images/generated/p74.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p75",
+    "category": "cat-13",
+    "name": "Eau Minérale 33 CL",
+    "description": "",
+    "price": 5,
+    "image": "assets/images/generated/p75.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p76",
+    "category": "cat-14",
+    "name": "Portion de frites",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p76-cutout.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p77",
+    "category": "cat-14",
+    "name": "1 Stripe ou 1 Wing",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p77-cutout.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p78",
+    "category": "cat-14",
+    "name": "Nuggets 3 pièces",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p78-cutout.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  },
+  {
+    "id": "p79",
+    "category": "cat-14",
+    "name": "Cordon Bleu 1 pièce",
+    "description": "",
+    "price": 10,
+    "image": "assets/images/generated/p79-cutout.webp",
+    "spicy": false,
+    "assetStatus": "generated-unique"
+  }
+];
